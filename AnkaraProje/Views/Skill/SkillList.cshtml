@@ -1,0 +1,40 @@
+﻿
+@*Modeli dahil etmek için @model yazılıyor sonrasında forech döndürüyoruz. Tablodaki SkillID title gibi ver
+  verileri getirmek için @item.Tablobaşlık eklenir döngü içine   *@
+
+@model List<AnkaraProje.Models.TblSkill>
+
+@{
+    ViewBag.Title = "SkillList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yetenek Listesi</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Değer</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.SkilllD</td>
+                    <td>@item.Title</td>
+                    <td>@item.Value</td>
+                    <td><a href="/Skill/DeleteSkill/@item.SkilllD" class="btn btn-danger">Sil</a></td>
+                    <td><a href="/Skill/UpdateSkill/@item.SkilllD" class="btn btn-success">Güncelle</a></td>
+                </tr>
+            }
+
+
+
+</table>
+
+@*Yeni bir yetenek eklemek için aşağıdakiler yapılır.Bunu yapmak içinde yeni action result oluşturmak lazım
+    controllersta*@
+
+<a href="/Skill/AddSkill/" class="btn btn-primary">Yeni Yetenek Girişi</a>

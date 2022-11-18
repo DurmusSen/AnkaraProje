@@ -7,7 +7,10 @@
       <Diagram DiagramId="ce7260015be54f789a8b3e73c887a505" Name="Diagram1">
         <EntityTypeShape EntityType="DbAnkaraPortfolioModel.TblContact" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbAnkaraPortfolioModel.TblSkill" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbAnkaraPortfolioModel.TblTestimonial" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAnkaraPortfolioModel.TblTestimonial" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAnkaraPortfolioModel.TblAdmin" Width="1.5" PointX="3.5" PointY="3" />
+        <EntityTypeShape EntityType="DbAnkaraPortfolioModel.TblEmployee" Width="1.5" PointX="5.5" PointY="0.5" />
+        <EntityTypeShape EntityType="DbAnkaraPortfolioModel.TblMessage" Width="1.5" PointX="5.625" PointY="2.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -20,6 +20,7 @@ namespace AnkaraProje.Controllers
             return View();
         }
         DbAnkaraPortfolioEntities db = new DbAnkaraPortfolioEntities();
+        
         public ActionResult SkillList()
         {
             //var ile değişken atanır ve döndürmesi için returnün içine atanan değişken yazılır.
@@ -78,5 +79,8 @@ namespace AnkaraProje.Controllers
             db.SaveChanges();
             return RedirectToAction("SkillList");
         }
+
+
+
     }
 }
